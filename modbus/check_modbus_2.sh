@@ -155,6 +155,10 @@ case $CODE in
 2)
     STATUS=CRITICAL
     ;;
+3)
+    STATUS=UNKNOWN
+    ;;	
+	
 esac
 
 echo "$STATUS - $MSG | $address=$ROUNDED;$lowcrit;$upcrit"
