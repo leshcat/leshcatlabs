@@ -33,7 +33,7 @@
 MODBUS=/usr/local/bin/check_modbus
 EXPECTED_ARGS=14
 
-REVISION='1.0 by leshcat'
+REVISION='1.0.1 by leshcat'
 
 E_OK=0
 E_WARN=1
