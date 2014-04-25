@@ -50,7 +50,7 @@ usage()
         echo "type: *man check_modbus* to learn more."
         echo "                     "
     echo Revision: $REVISION
-    exit $E_OK
+    exit $E_CRIT
 }
 
 #checking if MODBUS exists and executable
