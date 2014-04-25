@@ -33,7 +33,7 @@
 MODBUS=/usr/local/bin/check_modbus
 EXPECTED_ARGS=14
 
-REVISION='1.0.1 by leshcat'
+REVISION='1.0.2 by leshcat'
 
 E_OK=0
 E_WARN=1
@@ -141,7 +141,7 @@ ROUNDED=`echo $RESULT | awk {'print$2'} | sed 's/\..*//'`
 CODE=0
 MSG="$ROUNDED Volts"
 
-if (( $ROUNDED <= $lowcrit )) || (( $ROUNDED >= $upcrit )); then
+if (( $ROUNDED <= $lowcrit || $ROUNDED >= $upcrit )); then
         CODE=$E_CRIT;
 fi
 
